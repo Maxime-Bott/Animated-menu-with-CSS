@@ -25,28 +25,57 @@ img {
     height: 40px;
     width: 40px;
     margin: 10px 0 10px 0;
-    
 }
 
-.logo {
+.case {
     height: 72.5px;
     width: 75px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.logo {
+    position: absolute;
+    width: 75px;
+    height: 72.5px;
+    transition: 0.5s;
+    z-index: 10;
+    background-color:#4c4b4b;
+}
+
+
+
+.anim {
+    position: absolute;
+    width: 75px;
+    height: 72.5px;
+    z-index: 9;
+    background-color: #262626;
+    transition: 0.5s;
+    opacity: 90%;
+
+}
+
+.case:hover .logo {
+    background-color: white;
+}
+.case:hover .anim {
+    width: 150px;
+    transform: translateX(50%);
+    z-index: 11;
+}
+
+.anim {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 1s;
+    font-size: 14px;
+    color: #fff;
+
 }
 
-.logo:hover {
-    background-color: white;
-    transition: 1s;
+.active {
+    background-color: black;
+    transition: 0.5s;
 }
 
-.logo:nth-child(1) {
-    background-color: #262626;
-    
-}
-
-.logo:hover:nth-child(1) {
-    background-color: white;
-}
