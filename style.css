@@ -11,7 +11,7 @@ body {
     align-items: flex-end;
 }
 
-.side-bar {
+.sidebar {
     width: 75px;
     height: 580px;
     background-color: #4c4b4b;
@@ -21,10 +21,16 @@ body {
     justify-content: space-between;
 }
 
+a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
 img {
     height: 40px;
     width: 40px;
-    margin: 10px 0 10px 0;
+    margin: auto;
 }
 
 .case {
@@ -35,22 +41,23 @@ img {
     text-align: center;
 
 }
+
 .logo {
     position: absolute;
     width: 75px;
     height: 72.5px;
     transition: 0.5s;
     z-index: 10;
-    background-color:#4c4b4b;
+    background-color: #4c4b4b;
 }
 
 
 
 .anim {
     position: absolute;
-    width: 75px;
+    width: 150px;
     height: 72.5px;
-    left: -13px;;
+    left: -88px;
     z-index: 9;
     background-color: #262626;
     transition: 0.5s;
@@ -60,24 +67,22 @@ img {
     align-items: center;
     justify-content: center;
     color: #262626;
-    
+
 }
 
 .case:hover .logo {
     background-color: white;
 }
+
 .case:hover .anim {
     z-index: 11;
-    width: 150px;
-    transform: translateX(58%);
+    transform: translateX(109%);
 }
 
 .case:hover p {
     transition-duration: 0.5s;
     transition-timing-function: step-end;
     color: #fff;
-    
-    
 
 }
 
@@ -85,4 +90,3 @@ img {
     background-color: black;
     transition: 0.5s;
 }
-
