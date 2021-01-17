@@ -57,7 +57,7 @@ img {
     position: absolute;
     width: 150px;
     height: 72.5px;
-    left: -88px;
+    left: -75px;
     z-index: 9;
     background-color: #262626;
     transition: 0.5s;
@@ -76,7 +76,7 @@ img {
 
 .case:hover .anim {
     z-index: 11;
-    transform: translateX(109%);
+    transform: translateX(100%);
 }
 
 .case:hover p {
